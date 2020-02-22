@@ -49,12 +49,14 @@ nav a {
 .thumb {
   background-position: center center;
   background-size: cover;
-  padding-bottom: 56%;
+  padding-bottom: 68%;
 }
 .grid-container {
+  align-content: center;
   display: grid;
   grid-gap: 1em;
   grid-template-columns: 1fr;
+  text-align: center;
 }
 @media screen and (min-width: 550px) {
   .grid-container {grid-template-columns: repeat(2, 1fr);}
@@ -66,16 +68,43 @@ nav a {
   .grid-container {grid-template-columns: repeat(4, 1fr);}
 }
 .card {
-  border: 1px solid #333;
+  border: 1.5px solid #333;
 }
 .card-content {
-  padding: 1em;
+  padding: 0.5em;
 }
 .one .thumb {
-  background-image: url('../img/coffee.jpg');
+  background-image: url('../img/wraiththumb.jpg');
 }
 .two .thumb {
-  background-image: url('../img/coffee.jpg');
+  background-image: url('../img/pathfinderthumb.jpg');
+}
+.three .thumb {
+  background-image: url('../img/lifelinethumb.jpg');
+}
+.four .thumb {
+  background-image: url('../img/miragethumb.jpg');
+}
+.five .thumb {
+  background-image: url('../img/octanethumb.jpg');
+}
+.six .thumb {
+  background-image: url('../img/bangalorethumb.jpg');
+}
+.seven .thumb {
+  background-image: url('../img/wattsonthumb.jpg');
+}
+.eight .thumb {
+  background-image: url('../img/causticthumb.jpg');
+}
+.nine .thumb {
+  background-image: url('../img/gibraltarthumb.jpg');
+}
+.ten .thumb {
+  background-image: url('../img/bloodhoundthumb.jpg');
+}
+.eleven .thumb {
+  background-image: url('../img/cryptothumb.jpg');
 }
 /*--slideshow rules--*/
 .slideshow {
