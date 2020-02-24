@@ -10,6 +10,10 @@ body, section, div, article, aside, h1, h2, h3, h4, h5, h6, p {
   margin: 0;
 }
 
+body {
+  background-color: #E8E8E8;
+}
+
 /*-- Document Styles --*/
 footer {
   background-color: #333;
@@ -106,6 +110,22 @@ nav a {
 .eleven .thumb {
   background-image: url('../img/cryptothumb.jpg');
 }
+.twelve .thumb {
+  background-image: url('../img/revenantthumb.jpg');
+}
+
+.card-content {
+  font-family: "Duke"
+}
+
+.more {border-radius: 25%;}
+
+.more:hover {
+    background: #f44336;
+    color: white;
+}
+
+
 /*--slideshow rules--*/
 .slideshow {
   width: 100%;
@@ -115,16 +135,25 @@ nav a {
 .slideshow img {
   width: 100%;
 }
+
 .slideshow-wrap {
   position: relative;
   max-width: 1440px;
   margin: auto;
 }
 .prev, .next {
+  cursor: pointer;
   position: absolute;
   top: 50%;
   width: auto;
+  margin-top: -22px;
+  padding: 16px;
   color: #DDD;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
 }
 .next {
   right: 0;
@@ -132,6 +161,17 @@ nav a {
 .prev:hover, .next:hover {
   background: rgba(0, 0, 0, 0.5);
 }
+
+.caption {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
 .dot-wrap {
   text-align: center;
 }
@@ -147,5 +187,39 @@ nav a {
   background: #333;
 }
 
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
 
 /*-*/
+/* font website : https://hyperpix.net/fonts/apex-legends-font/ */
